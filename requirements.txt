@@ -12,6 +12,7 @@ future
 gast
 grpcio
 gym
+'gym[atari]'
 h5py
 idna
 imageio
