@@ -83,7 +83,10 @@ class AtariHead:
         return matches.iloc[0]
 
     def get_env_name(self, trial_number):
-        env_name = f'StreamingImageEnvNoFrameskip{trial_number}-v0'
+        # but yeah we need to change this hehe 
+        # env_name = f'StreamingImageEnvNoFrameskip{trial_number}-v0'
+        env_name = 'Breakout-v0'
+
 
         if env_name not in env_registry.env_specs:
             run = self.get_run(trial_number)
